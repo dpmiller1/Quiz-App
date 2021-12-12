@@ -1,0 +1,45 @@
+.question {
+    display: none;
+  }
+  p {
+    font-weight: bold;
+  }
+  .answer {
+    background-color: #f1f1f1;
+  }
+  input[type='radio'] {
+    margin-bottom: 10px;
+  }
+  .buttons {
+    display: flex;
+  }
+  .button  {
+    display: in-line block;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: darkblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 80px;
+    opacity: 50%;
+  }
+  .submit {
+    display: in-line block;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: darkblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 80px;
+  }
+  .hide {
+    display: none;
+  }
+  .active {
+    display: block;
+    opacity: 100%;
+  }

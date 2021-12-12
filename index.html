@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h1 class='title'>CSS Quiz</h1>
+<div class='container' id='quiz-body'>
+    <div id='question1' class='question question1 active'>
+      <div class='title'>
+        <h3>Question 1 of 3:</h3>
+      </div>
+      <p>Which of the following is not a real eCommerce platform?</p>
+      <div  class='answer'>
+        <input type="radio" id="a" name="question1" onclick="answered()">
+        <label for="a">Shopify</label>
+        <br><input type="radio" id="b" name="question1" onclick="answered()">
+        <label for="b">WooCommerce</label>
+        <br><input type="radio" id="c" name="question1" value="correct" onclick="answered()">
+        <label for="c">ShopCommerce</label><br>
+        <input type="radio" id="d" name="question1" onclick="answered()">
+        <label for="d">BigCommerce</label>
+      </div>
+    </div>
+    <div id='question2' class='question question2'>
+      <div class='title'>
+        <h3>Question 2 of 3:</h3>
+      </div>
+      <p>If Shopify is so good, why are Shopify developers necessary?</p>
+      <div class='answer'>
+        <input type="radio" id="a" name="question2" value="a" onclick="answered()">
+        <label for="a">To save time on things like store setups and migrations</label><br>
+        <input type="radio" id="b" name="question2" value="b" onclick="answered()">
+        <label for="b">To extend the limited design options and functionalities of themes with custom code</label><br>
+        <input type="radio" id="c" name="question2" value="c" onclick="answered()">
+        <label for="c">To provide support with a deep understanding of how the platform works and what its limitations are</label><br>
+        <input type="radio" id="d" name="question2" value="correct" onclick="answered()">
+        <label for="d">All the above</label>
+      </div>
+    </div>    
+    <div id='question3' class='question question3'>
+      <div class='title'>
+        <h3>Question 3 of 3:</h3>
+      </div>
+      <p>Which of the following is true about Shopify developers?</p>
+      <div class='question3 answer'>
+        <input type="radio" id="a" name="question3" value="a" onclick="answered()">
+        <label for="a">They are paid extremely well</label><br>
+        <input type="radio" id="b" name="question3" value="b" onclick="answered()">
+        <label for="b">There is a high demand for them</label><br>
+        <input type="radio" id="c" name="question3" value="c" onclick="answered()">
+        <label for="c">They need to know web development, the platform itself, and the liquid template language</label><br>
+        <input type="radio" id="d" name="question3" value="correct" onclick="answered()">
+        <label for="d">All the above</label>
+      </div>
+    </div>
+    <div class='buttons'>
+      <button class='button previous hide' id='previous' onclick='getPrevious()'>Previous</button>
+      <button class='button next-btn' id='next' onclick="getNewQuestion()" disabled>Next</button>
+      <button class='submit hide' id='submit'>Submit</button>
+    </div>
+</div>
+
+<!-- Score Page -->
+<div class='score hide' id='score-page'>
+  <div id='score'>
+    <h3>Congratulations!</h3>
+    <p>You have scored</p>
+  </div>
+  <button class='button reset active' id='reset' onClick="window.location.reload();">Reset</button> 
+</div>
+<script src="index.js"></script>
+</body>
+</html>
